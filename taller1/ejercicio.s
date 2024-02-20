@@ -26,7 +26,7 @@ alfsr:
     xor t2,t1,t2
     
     slli a1,a1,0x19     # Rotacion izquierda
-    srli a1,a1,0x18     # Rotacion izquierda
+    srli a1,a1,0x18     # Rotacion derecha
     add a1,t2,a1        # Suma de registros 
 
 ciclo:
