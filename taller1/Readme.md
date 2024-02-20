@@ -2,6 +2,14 @@
 ## Generador de números pseudo-aleatorios
 _Por Gabriel Conejo Valerio 2014093542_
 
+_Escuela de ingeniería en computadores_
+
+_CE 4301 — Arquitectura de Computadores I_
+
+_Semestre 1, 2024_
+
+
+
 ### Nociones básicas
 Para este generador de números  se utilizará el algoritmo LFSR _(linear-feedback shift register)_ usando el caso de Fibonacci. 
 
@@ -62,5 +70,12 @@ j end
 Se realizan la suma del contador, mem_pos; se guarda el nuevo valor generado por LFSR, se pregunta si a3 es menor que a4 si lo es  salta al la sección de alfsr y sino sigue la siguiente linea y esta salta la fin.
 
 
-### Ejecución del código  
+### Ejecución del código 
 
+Para ejecutar este código primero se abre la aplicación de simulador de procesador RISC-V: Ripes.
+
+Se carga el archivo _"ejercicio.s"_. Se ejecuta el archivo.
+
+Para observar donde se guarda los números aleatorios de busca la pestaña de memory y luego se busca el registro 0x100.
+
+>Nota: Si se quisiera modificar el numero aleatorio se modifica la linea #(modificar despues) el contador seria la linea #() y el valor de memoria es la linea #().
